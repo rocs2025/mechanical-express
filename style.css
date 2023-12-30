@@ -366,4 +366,9 @@ cursor: pointer;
  svg{
   transition: transform .5s ease-in;
  }
- 
+
+ @media (max-width:425px){
+  h4{
+    font-size: 0;
+  }
+ }
