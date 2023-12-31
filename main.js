@@ -33,5 +33,3 @@ sections.forEach(section => { const { id, offsetTop, clientHeight  } = section;
 
    ///////////////////////////
    
-    
-

@@ -31,6 +31,7 @@
     <link rel="icon" href="img/OIG (1).ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="tex" href="script.js">
 <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Mulish&family=Rubik+Lines&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -38,6 +39,7 @@
     
 <a data-scroll="home" href="#home" class="active">Home</a>
 <a data-scroll="about" href="#about" class="active">About</a>
+<a data-scroll="Promotions" href="#Promotions" class="active">Promotions</a>
 <a data-scroll="us" href="#us" class="active">FAQs</a>
    </nav>
 
@@ -53,11 +55,7 @@
       </div>
     <div class="contenedor-sobremi">
     <img class="imagen" src="img/OIG (1).ico" alt="" >
-    <script type="text/javascript">
-      document.oncontextmenu = function(){
-         return false;
-      }
-    </script>
+    
     <div class="parrafo-boton">
       <p class="texto">
          <!-- ‎  -->The best mechanical service</p>
@@ -74,13 +72,54 @@
     <div class="container">
         <div class="content-wrapper text-center">
             <div class="content">
-                <h1>Hola soy Rodri</h1>
+                <h1>Mechanical</h1><h1 class="ty">Express</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque 
                    molestias, iusto modi eligendi nam unde ex sunt voluptate itaque nihil deserunt.
                 Laudantium facere temporibus cum ea. Delectus voluptatibus porro ea!</p>    
             </div>
         </div>
       </div>
+</section>
+<section id="Promotions" class="Promotions">
+   
+
+  <div class="slide">
+      <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slide-1" 
+                name="slide" aria-hidden="true" hidden="" checked="checked">
+          <div class="slide-item">
+              <img src="img/secure.png">
+          </div>
+          <input class="slide-open" type="radio" id="slide-2" 
+                name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+              <img src="img/FAST !.png">
+          </div>
+          <input class="slide-open" type="radio" id="slide-3" 
+                name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+              <img src="img/_! (1).png">
+          </div>
+          <label for="slide-3" class="slide-control prev control-1"><i class="fa-solid fa-angle-left"></i></label>
+          <label for="slide-2" class="slide-control next control-1"><i class="fa-solid fa-angle-right"></i></label>
+          <label for="slide-1" class="slide-control prev control-2"><i class="fa-solid fa-angle-left"></i></label>
+          <label for="slide-3" class="slide-control next control-2"><i class="fa-solid fa-angle-right"></i></label>
+          <label for="slide-2" class="slide-control prev control-3"><i class="fa-solid fa-angle-left"></i></label>
+          <label for="slide-1" class="slide-control next control-3"><i class="fa-solid fa-angle-right"></i></label>
+          <ol class="slide-indicador">
+              <li>
+                  <label for="slide-1" class="slide-circulo">•</label>
+              </li>
+              <li>
+                  <label for="slide-2" class="slide-circulo">•</label>
+              </li>
+              <li>
+                  <label for="slide-3" class="slide-circulo">•</label>
+              </li>
+          </ol>
+      </div>
+  </div>
+
 </section>
 
 <section id="us" class="section-faq">
@@ -151,9 +190,25 @@
 
 
 </section>
+     <footer>
+      <div class="footer-content">
+         <h3>Mechanical</h3><h3 class="expr"> Express ©</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae saepe corporis quis
+             fugiat possimus quibusdam</p>
+            <ul class="socials">
+               <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+      </div>
+      <div class="footer-bottom">
+         <p>copyright &copy;2024 Mechanical Express. Designed by <span>ROCS</span></p>
+      </div>
+     </footer>
 
 
    <script type="text/javascript" src="main.js"></script> 
+   <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
