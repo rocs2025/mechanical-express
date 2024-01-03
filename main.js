@@ -32,4 +32,13 @@ sections.forEach(section => { const { id, offsetTop, clientHeight  } = section;
 
 
    ///////////////////////////
-   
+   var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

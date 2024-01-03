@@ -37,7 +37,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color:  #e6a881;
+    color:  #8C6E5D;
     transition: 0.3s;
     font-size: 16px;
     font-weight: 600;
@@ -45,9 +45,9 @@ nav a{
 }
 nav a:hover{
   text-shadow:  0 0 5px #9d0007,
-                0 0 15px cyan,
-                0 0 20px cyan,
-                0 0 50px cyan;
+                0 0 15px #F2A35E,
+                0 0 20px #F2A35E,
+                0 0 50px #F2A35E;
 }
 nav a.active{
     color: white;
@@ -76,7 +76,7 @@ section:nth-child(3){
     background: #0e1317ff;
 }
 section :nth-child(3) p {
-  color: #e6a881;
+  color: #F5CA87;
 }
   
 
@@ -90,10 +90,10 @@ section:nth-child(3) .ty{
   font-family: 'Exo 2', sans-serif;;
   color: #fff;
   text-shadow: 0 0 10px #F23E16,
-               0 0 20px #F23E16,
+               0 0 20px cyan,
                0 0 40px #F23E16,
-               0 0 80px #F23E16;
-  margin-bottom: 100px;
+               0 0 80px cyan;
+  margin-bottom: 50px;
   font-size: 40px;
 }
 section:nth-child(4){
@@ -104,9 +104,17 @@ section:nth-child(4){
 
 }
 #us{
-  color: #e6a881;
+  color: #F5CA87;
 }
-
+#us h1{
+  color: #FAFAFA;
+}
+#us h1:hover{
+  text-shadow: 0 0 5px #9d0007,
+                0 0 15px #F2A35E,
+                0 0 20px #F2A35E,
+                0 0 20px #F2A35E;
+}
 section:nth-child(4) h2 {
     color: rgb(255 255 255 / 96%);
   }
@@ -241,8 +249,9 @@ cursor: pointer;
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #FFFAFA;
   cursor: pointer;
+  
  }
  .question{
   display: flex;
@@ -250,12 +259,21 @@ cursor: pointer;
   align-items: center;
  }
  .question h2{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  color: #ADBDF4;
+ }
+ .question h2:hover{
+  text-shadow:  0 0 5px #9d0007,
+                0 0 15px cyan,
+                0 0 20px cyan,
+                0 0 50px #ADBDF4;
  }
  .answer p{
   padding-top: 1rem;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  color: #F5CA87;
+
  }
  .answer{
   max-height: 0;
@@ -272,6 +290,7 @@ cursor: pointer;
   flex-direction: column;
   align-items: center;
  }
+ 
  .title{
   font-size: 3rem;
   margin: 2rem 0rem;
@@ -368,126 +387,7 @@ cursor: pointer;
     }
   } */
 
-  .slide {
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
-    max-height: 100vh;
-}
-.slide-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: calc( 300px + 3em);
-}
-.slide-open:checked + .slide-item {
-    position: static;
-    opacity: 100;
-}
-.slide-item {
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-}
-.slide-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .5s;
-}
-.slide-item img:hover{
-  scale: 1.10;
-}
-.slide-control {
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    font-size: 1.2rem;
-    height: 46px;
-    line-height: 45px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 46px;
-    z-index: 10;
-    transition: 0.8s;
-}
-.slide-control:hover{
-  scale: 1.10;
-  font-size: 1rem;
-  box-shadow: 0 0 5px blue,
-              0 0 25px cyan,
-              0 0 50px cyan,
-              0 0 100px cyan,
-              0 0 200px #fff;
-  background: #0d0d13;
-  color: cyan;
-}
-.slide-control.prev {
-    left: 2%;
-}
-.slide-control.next {
-    right: 2%;
-}
-
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
-    display: block;
-}
-.slide-indicador {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-.slide-indicador li {
-    display: inline-block;
-    margin: 0 5px;
-}
-.slide-circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-#slide-1:checked ~ .control-1 ~ .slide-indicador 
-     li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador 
-      li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
-    color: #428bca;
-}
-#titulo {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-         -1px 0px 2px rgba(255, 255, 255, 0);
-}
-
-
+  
 
 
 footer{
@@ -515,6 +415,10 @@ footer{
   line-height: 3rem;
   font-family: 'Russo One', sans-serif;
   margin-bottom: 0;
+  text-shadow: 0 0 10px #F23E16,
+               0 0 20px #F23E16,
+               0 0 40px #F23E16,
+               0 0 80px #F23E16;
 }
 .footer-content .expr{
   font-family: 'Exo 2', sans-serif;
@@ -561,8 +465,31 @@ footer{
   font-size: 1.1rem;
   transition: colo .4s ease;
 }
-.socials a:hover i{
-  color: #34ffea;
+
+.socials a:hover  #instagram {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  scale: 1.30;
+  transition: .5s;
+  border-radius: 100%;
+  
+}
+.socials a:hover #whatsapp{
+  background-color:#25d366;
+  color:#FFF;
+  scale: 1.30;
+  transition: .5s;
+  border-radius: 200px;
+  
+}
+.socials a:hover  #facebook {
+  color: #405DE6;
+  transition: .5s;
+  scale: 1.30;
+  
 }
 .footer-bottom{
   background: #090c11;
@@ -579,4 +506,12 @@ footer{
   text-transform: uppercase;
   opacity: .4;
   font-weight: 200;
+}
+
+.footer-bottom span:hover{
+  text-shadow: 0 0 10px #211663,
+               0 0 20px #211663,
+               0 0 40px #211663,
+               0 0 80px #211663;
+               opacity: .100;
 }

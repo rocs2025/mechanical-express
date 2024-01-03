@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -72,54 +73,128 @@
     <div class="container">
         <div class="content-wrapper text-center">
             <div class="content">
-                <h1>Mechanical</h1><h1 class="ty">Express</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque 
-                   molestias, iusto modi eligendi nam unde ex sunt voluptate itaque nihil deserunt.
-                Laudantium facere temporibus cum ea. Delectus voluptatibus porro ea!</p>    
+                <h1 class="ty">Mechanical Express</h1>
+                <p>At MECHANICAL EXPRESS, we are a team of highly trained professionals dedicated to providing 
+                  the highest quality vehicle repair and maintenance services. We pride ourselves on our ability to 
+                  diagnose and resolve complex mechanical problems, as well as perform routine maintenance tasks to keep our customers'
+                   vehicles in the best condition possible. Our passion for automobiles and our commitment to customer 
+                   satisfaction drive us to exceed expectations on every job we do. In short,
+                   we are more than just mechanics, we are the guardians of your vehicle's safety and performance.</p>    
             </div>
         </div>
       </div>
 </section>
 <section id="Promotions" class="Promotions">
-   
+   <style>
+   swiper-container {
+      width: 240px;
+      height: 320px;
+    }
 
-  <div class="slide">
-      <div class="slide-inner">
-          <input class="slide-open" type="radio" id="slide-1" 
-                name="slide" aria-hidden="true" hidden="" checked="checked">
-          <div class="slide-item">
-              <img src="img/secure.png">
-          </div>
-          <input class="slide-open" type="radio" id="slide-2" 
-                name="slide" aria-hidden="true" hidden="">
-          <div class="slide-item">
-              <img src="img/FAST !.png">
-          </div>
-          <input class="slide-open" type="radio" id="slide-3" 
-                name="slide" aria-hidden="true" hidden="">
-          <div class="slide-item">
-              <img src="img/_! (1).png">
-          </div>
-          <label for="slide-3" class="slide-control prev control-1"><i class="fa-solid fa-angle-left"></i></label>
-          <label for="slide-2" class="slide-control next control-1"><i class="fa-solid fa-angle-right"></i></label>
-          <label for="slide-1" class="slide-control prev control-2"><i class="fa-solid fa-angle-left"></i></label>
-          <label for="slide-3" class="slide-control next control-2"><i class="fa-solid fa-angle-right"></i></label>
-          <label for="slide-2" class="slide-control prev control-3"><i class="fa-solid fa-angle-left"></i></label>
-          <label for="slide-1" class="slide-control next control-3"><i class="fa-solid fa-angle-right"></i></label>
-          <ol class="slide-indicador">
-              <li>
-                  <label for="slide-1" class="slide-circulo">•</label>
-              </li>
-              <li>
-                  <label for="slide-2" class="slide-circulo">•</label>
-              </li>
-              <li>
-                  <label for="slide-3" class="slide-circulo">•</label>
-              </li>
-          </ol>
-      </div>
-  </div>
+    swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
 
+    swiper-slide:nth-child(1n) {
+      background: url(img/card-1.png);
+    }
+
+    swiper-slide:nth-child(2n) {
+      background: url(img/card-2.png);
+    }
+
+    swiper-slide:nth-child(3n) {
+      background: url(img/card-3.png);
+    }
+
+    swiper-slide:nth-child(4n) {
+      background: url(img/card-4.png);
+    }
+
+    swiper-slide:nth-child(5n) {
+      background: url(img/card-5.png);
+    }
+
+    swiper-slide:nth-child(6n) {
+      background: url(img/card-6.png);
+    }
+
+    swiper-slide:nth-child(7n) {
+      background: url(img/card-7.png);
+    }
+
+    swiper-slide:nth-child(8n) {
+      background: url(img/card-8.png);
+    }
+
+    swiper-slide:nth-child(9n) {
+      background: url(img/card-9.png);
+
+      }
+
+    swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+    .btn{
+      display: flex;
+      background-color: rgb(6, 167, 189);
+      padding: 20px;
+      width: 100px;
+      height:30px;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      position: absolute ;
+      align-items: center;
+      text-align: center;
+      transition: .5s;
+      cursor: pointer;
+      margin-top: 240px;
+      border: none;
+
+    }
+    .btn:hover{
+      scale: 1.10;
+      background: rgb(49, 49, 49);
+      box-shadow: 0 0 5px #FAFAFA,
+              0 0 25px #FAFAFA,
+              0 0 50px #FAFAFA,
+              0 0 100px #FAFAFA,
+              0 0 200px #FAFAFA;
+    }
+    .btn a{
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px ;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+    <swiper-slide><button class="btn"><a href="#">Ver mas</a></button></swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </section>
 
 <section id="us" class="section-faq">
@@ -128,57 +203,49 @@
 
  <div class="faq">
     <div class="question">
-        <h2>What is love?</h2>
+        <h2>What is the main function of the engine in a car?</h2>
      <svg width="15" height="10" viewBox="0 0 42 25">
         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
      </svg> 
     </div>
     <div class="answer">
-        <p>Como he mencionado antes, puedes utilizar los códigos Alt para escribir caracteres que 
-            de otro modo podrías escribir en tu teclado. 
-            Esto es útil si una de las teclas de tu teclado no está en funcionamiento.</p>
+        <p>The engine is the fundamental part of a vehicle because it is responsible for generating energy to transform it into movement.</p>
     </div>
  </div>
 
  <div class="faq">
     <div class="question">
-        <h2>What is nazi?</h2>
+        <h2>When should brake fluid be changed??</h2>
      <svg width="15" height="10" viewBox="0 0 42 25">
         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
      </svg> 
     </div>
     <div class="answer">
-        <p>Como he mencionado antes, puedes utilizar los códigos Alt para escribir caracteres que 
-            de otro modo podrías escribir en tu teclado. 
-            Esto es útil si una de las teclas de tu teclado no está en funcionamiento.</p>
+        <p>In ABS systems, the brake fluid must be changed every year or every 20,000 km, and in conventional systems, every 2 years or 40,000 km.</p>
     </div>
  </div>
 
  <div class="faq">
     <div class="question">
-        <h2>What is hitler?</h2>
+        <h2>What is the body of a car?</h2>
      <svg width="15" height="10" viewBox="0 0 42 25">
         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
      </svg> 
     </div>
     <div class="answer">
-        <p>Como he mencionado antes, puedes utilizar los códigos Alt para escribir caracteres que 
-            de otro modo podrías escribir en tu teclado. 
-            Esto es útil si una de las teclas de tu teclado no está en funcionamiento.</p>
+        <p>The body is the external part of the car that covers the chassis and engine</p>
     </div>
  </div>
 
  <div class="faq">
     <div class="question">
-        <h2>What is hurt?</h2>
+        <h2>When should spark plug wires be changed?</h2>
      <svg width="15" height="10" viewBox="0 0 42 25">
         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
      </svg> 
     </div>
     <div class="answer">
-        <p>Como he mencionado antes, puedes utilizar los códigos Alt para escribir caracteres que 
-            de otro modo podrías escribir en tu teclado. 
-            Esto es útil si una de las teclas de tu teclado no está en funcionamiento.</p>
+        <p>The spark plug wires must be changed every 4 years or every 80,000 km..</p>
     </div>
  </div>
 
@@ -192,13 +259,13 @@
 </section>
      <footer>
       <div class="footer-content">
-         <h3>Mechanical</h3><h3 class="expr"> Express ©</h3>
+         <h3>Mechanical Express ©</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae saepe corporis quis
              fugiat possimus quibusdam</p>
             <ul class="socials">
-               <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+               <li><a href="#"><i  id="facebook" class="fa-brands fa-facebook"></i></a></li>
+               <li><a href="#" ><i id="instagram" class="fa-brands fa-instagram"></i></a></li>
+               <li><a href="#"><i id="whatsapp" class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
       </div>
       <div class="footer-bottom">
@@ -209,6 +276,7 @@
 
    <script type="text/javascript" src="main.js"></script> 
    <script type="text/javascript" src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
