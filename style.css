@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -181,9 +182,10 @@ section:nth-child(4) h2 {
   width: 230px;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
-  border-right: 3px solid;
+  border-right: 0px solid;
+  font-family: 'Afacad', sans-serif;
  }
  .texto span.typed-text{
   color: black;
@@ -232,14 +234,39 @@ cursor: pointer;
   scale: 1.10;
   color: #ffffff;
   font-size: 1rem;
-  box-shadow: 0 0 5px #F23E16,
-              0 0 25px #F23E16,
-              0 0 50px #F23E16,
-              0 0 100px #F23E16,
-              0 0 200px #F23E16;
+  
  }
 
-
+#insta:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  box-shadow: 0 0 5px #dc2743 ,
+              0 0 25px #bc1888 ,
+              0 0 50px #f09433 ,
+              0 0 100px #e6683c ,
+              0 0 200px #cc2366 ;
+}
+#whats:hover{
+  background-color:#25d366;
+  color:#FFF;
+  transform: rotateY(360deg);
+  box-shadow: 0 0 5px #25d366,
+              0 0 25px #25d366,
+              0 0 50px #25d366,
+              0 0 100px #25d366,
+              0 0 200px #25d366;
+}
+#face:hover{
+  background-color:  #2A558C;
+  box-shadow: 0 0 5px #2A558C,
+              0 0 25px #2A558C,
+              0 0 50px #2A558C,
+              0 0 100px #2A558C,
+              0 0 200px #2A558C;
+}
 
 
 
@@ -259,7 +286,7 @@ cursor: pointer;
   align-items: center;
  }
  .question h2{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #ADBDF4;
  }
  .question h2:hover{
@@ -269,7 +296,7 @@ cursor: pointer;
                 0 0 50px #ADBDF4;
  }
  .answer p{
-  padding-top: 1rem;
+  padding-top: 1.4rem;
   line-height: 1.6;
   font-size: 1.2rem;
   color: #F5CA87;
