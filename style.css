@@ -62,20 +62,22 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color:  #8C6E5D;
+    color:  #6b3029;
     transition: 0.3s;
     font-size: 16px;
     font-weight: 600;
     padding: 10px;
+    
 }
 nav a:hover{
   text-shadow:  0 0 5px #9d0007,
-                0 0 15px #F2A35E,
-                0 0 20px #F2A35E,
-                0 0 50px #F2A35E;
+                0 0 15px #9d0007,
+                0 0 20px #9d0007,
+                0 0 50px #9d0007;
 }
 nav a.active{
     color: white;
+    
 }
 nav span{
     margin-right: 10px;
@@ -94,8 +96,12 @@ p{
 }
 
 section:nth-child(2){
-    background: url(img/ñ.jpg);
+    background: url(img/fondo-prueba2.jpg);
     color: white;
+    background-repeat: no-repeat;
+    padding: 0 35px;
+    min-height: 100vh;
+
 }
 section:nth-child(3){
     background: #0e1317ff;
@@ -122,10 +128,11 @@ section:nth-child(3) .ty{
   font-size: 40px;
 }
 section:nth-child(4){
-    background: url(img/Diseño\ sin\ título.png);
+    background: url(img/rojo1.jpg);
     background-repeat: no-repeat;
     padding: 0 35px;
     min-height: 100vh;
+   
 
 }
 #us{
@@ -166,17 +173,17 @@ section:nth-child(4) h2 {
   margin-top: 100px;
   justify-content: left ;
   box-shadow: 0 0 5px #9d0007,
-                0 0 15px cyan,
-                0 0 20px cyan,
-                0 0 10px #fff;
+                0 0 15px #b51822ff,
+                0 0 20px #b51822ff,
+                0 0 10px #b51822ff;
   cursor: not-allowed;
  }
  .imagen:hover{
    scale: 1.10;
    box-shadow: 0 0 5px #9d0007,
-                0 0 15px cyan,
-                0 0 20px cyan,
-                0 0 20px #fff;
+                0 0 15px #b51822ff,
+                0 0 20px #b51822ff,
+                0 0 20px #b51822ff;
  }
  h4{
   font-size: 60px;
@@ -187,15 +194,15 @@ section:nth-child(4) h2 {
  }
  
  .exp{
-  color: rgb(156, 56, 16);
+  color: #f7faf8ff; 
   font-family: 'Exo 2', sans-serif;
  }
  .exp:hover{
   color: #fff;
-  text-shadow: 0 0 10px #F23E16,
-               0 0 20px #F23E16,
-               0 0 40px #F23E16,
-               0 0 80px #F23E16;
+  text-shadow: 0 0 10px #b51822ff,
+               0 0 20px #b51822ff,
+               0 0 40px #b51822ff,
+               0 0 80px #b51822ff;
  }
  .texto{
   margin-bottom: 20px;
@@ -239,7 +246,7 @@ section:nth-child(4) h2 {
   margin-right: 350px;
  }
  .boton{
-  color: #e6a881;
+  color: whitesmoke; 
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
@@ -251,46 +258,15 @@ section:nth-child(4) h2 {
 border-radius: 10px;
 background: black;
 cursor: pointer;
-  margin-top: 100px;
+  margin-top: 120px;
  }
  .boton:hover{
   /* background: #A63838; */
   scale: 1.10;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   
  }
-
-#insta:hover{
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  box-shadow: 0 0 5px #dc2743 ,
-              0 0 25px #bc1888 ,
-              0 0 50px #f09433 ,
-              0 0 100px #e6683c ,
-              0 0 200px #cc2366 ;
-}
-#whats:hover{
-  background-color:#25d366;
-  color:#FFF;
-  transform: rotateY(360deg);
-  box-shadow: 0 0 5px #25d366,
-              0 0 25px #25d366,
-              0 0 50px #25d366,
-              0 0 100px #25d366,
-              0 0 200px #25d366;
-}
-#face:hover{
-  background-color:  #2A558C;
-  box-shadow: 0 0 5px #2A558C,
-              0 0 25px #2A558C,
-              0 0 50px #2A558C,
-              0 0 100px #2A558C,
-              0 0 200px #2A558C;
-}
 
 
 
@@ -518,18 +494,14 @@ footer{
 }
 
 .socials a:hover  #instagram {
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  
   scale: 1.30;
   transition: .5s;
   border-radius: 100%;
   
 }
 .socials a:hover #whatsapp{
-  background-color:#25d366;
+  
   color:#FFF;
   scale: 1.30;
   transition: .5s;
@@ -537,7 +509,7 @@ footer{
   
 }
 .socials a:hover  #facebook {
-  color: #405DE6;
+  color: #FFF;
   transition: .5s;
   scale: 1.30;
   
